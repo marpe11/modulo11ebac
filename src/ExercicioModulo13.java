@@ -16,9 +16,6 @@ public class ExercicioModulo13 {
         public void setNome(String nome) {
             this.nome = nome;
         }
-
-        // Método abstrato que as subclasses devem implementar
-        public abstract void exibirInformacoes();
     }
 
     // Classe concreta PessoaFisica
@@ -39,12 +36,6 @@ public class ExercicioModulo13 {
         public void setCpf(String cpf) {
             this.cpf = cpf;
         }
-
-        @Override
-        public void exibirInformacoes() {
-            System.out.println("Nome: " + getNome());
-            System.out.println("CPF: " + cpf);
-        }
     }
 
     // Classe concreta PessoaJuridica
@@ -64,12 +55,6 @@ public class ExercicioModulo13 {
 
         public void setCnpj(String cnpj) {
             this.cnpj = cnpj;
-        }
-
-        @Override
-        public void exibirInformacoes() {
-            System.out.println("Nome: " + getNome());
-            System.out.println("CNPJ: " + cnpj);
         }
     }
 
